@@ -7,6 +7,7 @@ function qe_enqueue_scripts() {
 	wp_register_style("qe-style",  plugins_url() . "/quick-enquiry/assets/quick-enquiry.css");
 	
 	//Enqueue them.
+	wp_enqueue_script("jquery");
 	wp_enqueue_script("qe-verify", false, array('jquery'), false, true);
 	wp_enqueue_style("qe-style");
 	
