@@ -1,4 +1,11 @@
- WebFontConfig = {
+if ( typeof $ === "undefined" ) {
+	$ = jQuery;
+}
+if ( typeof jQuery === "undefined" ) {
+	jQuery = $;
+}
+
+WebFontConfig = {
     google: { families: [ 'Open+Sans:700italic,400,600:latin' ] }
   };
   (function() {
